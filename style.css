@@ -1,0 +1,737 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body {
+    background-color: #FCC6FF;
+    color: rgb(0, 0, 0);
+}
+
+/* Header */
+header {
+    background-color: #79166f;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    color: #B7B1F2;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 0 0 15px #F9CB43; 
+}
+    
+
+/* Navigation */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #B7B1F2;
+    font-weight: bold;
+}
+
+/* Sections */
+section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Home Section */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+  .home .active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 200px;
+    text-shadow: 0 0 15px #F9CB43;
+    margin-bottom: 100px;
+    transform: translateY(40px);
+    transition: all 1s ease;
+
+}
+
+/* Profile Picture */
+.home-img {
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.profile-picture:hover {
+    transform: scale(1.1);
+    height: 300px;
+    width: 300px;
+}
+
+.title {
+    font-size: 36px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid black;
+    width: 0;
+    margin: 0 ;
+    display: inline-block;
+    animation: typing 6s steps(38) infinite, blink  0.7s step-end infinite;
+}
+
+@keyframes typing {
+    0% { width: 0; }
+    100% { width: 105%; }
+    
+}
+
+@keyframes blink {
+    from { border-color:black; }
+    to { border-color: transparent; }
+}
+
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #B7B1F2;
+    color:black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #FFE6C9;
+}
+
+/* About Me Section */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.about a {
+    background-color: #fff;
+    padding: 50px 0;
+    font-size: 55px;
+  }
+  
+  /* Jika ada elemen dengan class .section */
+  .section {
+    font-size: 40px;
+  }
+  
+  /* Container foto About Me */
+  .about_me {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  /* Styling foto profil */
+  .profil-about {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    transition: 0.3s;
+    margin-top: 70px;
+    margin-left: 50px;
+  }
+  
+  .profil-about:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Styling paragraf dalam section about */
+  .about p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 16px;
+    
+  }
+  .col {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  
+  .about h1{
+    font-size: 35px;
+    margin-top: -150px;
+    text-shadow: 0 0 15px #F9CB43; 
+  }
+
+  .about h1 span {
+    color: #79166f;
+  }
+
+
+/* Section Education */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.education {
+    padding: 50px 0;
+    background-color: white; 
+    text-align: center;
+}
+
+
+.education-skills h1{
+    font-size: 35px;
+    margin-top: -150px;
+    text-shadow: 0 0 15px #F9CB43; 
+  }
+
+.education-skills h1 span {
+    color: #79166f;
+}
+
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.timeline h1{
+    font-size: 35px;
+    margin-top: -150px;
+    text-shadow: 0 0 15px #F9CB43; 
+  }
+
+.timeline h1 span {
+    color: #79166f;
+}
+
+/* Garis Tengah */
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #212121;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Timeline Item */
+.timeline-item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    color: black;
+    border-radius: 25px;
+    padding: 20px;
+    width: 50%;
+    margin: 20px 0;
+    position: relative;
+    box-shadow: 0 0 10px #ECDFCC;
+    transition: transform 2s ease-in-out;
+}
+
+.timeline-item:hover {
+    box-shadow: 0 0 20px 5px purple;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row;
+    text-align: left;
+    transform: translateX(-10%);
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: left;
+    transform: translateX(10%);
+}
+
+/* Konten */
+.content {
+    flex: 1;
+    padding: 10px;
+}
+
+
+/* Tahun */
+.year {
+    font-size: 14px;
+    font-weight: bold;
+    color: #212121;
+}
+
+/* Gambar Sekolah */
+.image {
+    flex-basis: 120px;
+    margin: 10px;
+}
+
+.image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #ECDFCC;
+    object-fit: cover;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column !important;
+        width: 80%;
+        text-align: center;
+        transform: translateX(0);
+    }
+    
+    .image {
+        margin-bottom: 10px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*  Skills */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.skills {
+    background-color: #FCC6FF; 
+    padding: 50px 0;
+}
+
+.skills h1{
+    font-size: 35px;
+    margin-top: -150px;
+    text-shadow: 0 0 15px #F9CB43; 
+  }
+
+.skills h1 span {
+    color: #79166f;
+}
+
+
+.skills .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black; 
+    margin-top: 20px;
+    padding: 0 5%;
+}
+
+.skills .col-left,
+.skills .col-right {
+    width: 46%;
+}
+
+.skills .col-left .content-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black; 
+}
+
+.skills .col-left .paragraph-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: black; 
+    text-shadow: 0 0 15px #F9CB43; 
+}
+
+.skills .btn {
+    display: inline-block;
+    color: black;
+    text-shadow: 0 0 15px #F9CB43; 
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.skills .col-right .bar {
+    margin-bottom: 15px;
+    padding: 10px 0;
+}
+
+.skills .col-right .bar .info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    color: black; 
+}
+
+.skills .col-right .bar .line {
+    position: relative;
+    width: 100%;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.skills .col-right .bar .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    background: #27445D;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Progress Width */
+.skills .col-right .bar .line.html::before {
+    width: 80%;
+}
+.skills .col-right .bar .line.css::before {
+    width: 40%;
+}
+.skills .col-right .bar .line.javascript::before {
+    width: 30%;
+}
+.skills .col-right .bar .line.python::before {
+    width: 40%;
+}
+.skills .col-right .bar .line.php::before {
+    width: 70%;
+}
+
+/* =========================
+       Portfolio Section Styles
+========================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.portfolio {
+    background: #FCC6FF;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.portfolio h1 {
+    font-size: 40px;
+    margin-bottom: 30px; /* Mengurangi margin negatif agar tidak terlalu dekat */
+    text-shadow: 0 0 15px #F9CB43;
+}
+
+.portfolio h1 span {
+    color: #79166f;
+}
+
+/* Menyesuaikan tata letak project agar lebih rapi */
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* Memberikan jarak antar proyek */
+    padding: 0 20px;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+    width: calc(30% - 40px); 
+    min-width: 250px;
+    margin-bottom: 30px; 
+    transition: transform 2s ease-in-out;
+    box-shadow: 0 0 20px 5px purple;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.portfolio-item h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Responsif untuk ukuran tablet */
+@media (max-width: 768px) {
+    .portfolio-item {
+        width: calc(45% - 40px);
+    }
+}
+
+/* Responsif untuk ukuran HP */
+@media (max-width: 480px) {
+    .portfolio-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .portfolio-item {
+        width: 100%;
+    }
+}
+
+/* Contact Section */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.contact {
+    background-color: #79166f;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 900px;
+    gap: 30px;
+}
+
+.contact-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 0 0 15px #F9CB43; 
+}
+
+.contact-text p {
+    font-size: 16px;
+    color: #fff;
+    text-shadow: 0 0 15px #F9CB43; 
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form button {
+    width: 100%;
+    background-color: blue;
+    color: #fff;
+    padding:12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #fff;
+}
+
+.portofolio-items {
+    display: flex;
+    flex-direction: column; /* Ubah dari 'row' ke 'column' */
+    align-items: center; /* Pusatkan item */
+    gap: 20px; /* Jarak antar item */
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
+
+footer{
+    text-align: center;
+    background-color: #fff;
+   color: #79166f;
+    padding: 30px;
+}
